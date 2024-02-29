@@ -69,8 +69,8 @@ public class BankCardService {
     private Date calculateExpirationDate(Date issueDate) {
         LocalDate localIssueDate = issueDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
         LocalDate expirationDate = localIssueDate.plusYears(3);
-        //return Date.from(expirationDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
-        return new Date();
+        return Date.from(expirationDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
+        //return new Date();
     }
 
     // проверка уникальности номера карты

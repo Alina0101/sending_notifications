@@ -39,7 +39,7 @@ public class NotificationScheduler implements Runnable {
                 }
             }
             try {
-                Thread.sleep(30000); // Пауза на 1 день (в миллисекундах)
+                Thread.sleep(300000); // каждые 5 минут
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

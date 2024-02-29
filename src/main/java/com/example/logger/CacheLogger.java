@@ -30,7 +30,7 @@ public class CacheLogger implements Runnable {
             }
 
             try {
-                Thread.sleep(30000);
+                Thread.sleep(30000); // каждые 30 секунд
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
